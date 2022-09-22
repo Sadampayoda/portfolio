@@ -82,9 +82,13 @@
 
 .conten6{
     background-color: rgb(235, 158, 17);
-    height: 100vh;
 }
 
 .cursor{
     cursor: pointer;
+}
+
+.conten7 {
+    background-color: black;
+    height: 50vh;
 }
