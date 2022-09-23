@@ -34,7 +34,8 @@ Hasil.innerHTML = jawab[Result];
 
 ButtonMasuk.addEventListener('click', () => {
     document.body.classList.remove('over')
-    container.style.opacity = '0'
+    container.classList.add('AfterButton')
+    container.classList.remove('first')
 })
 
 
