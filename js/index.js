@@ -61,5 +61,19 @@ window.addEventListener('scroll' ,() => {
 })
 
 
+//untuk form pesan
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzLAFq_Nc7cCfbZwXwooOeDVLxfY3ipRjPetR0O-ePujsFiAknEMHmgplcvnegfVaZeWQ/exec'
+  const form = document.forms['pesan-portfolio']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        location.reload()
+        console.log('Success!', response)
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+
 
 
