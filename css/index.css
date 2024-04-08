@@ -87,7 +87,10 @@
     color: rgb(212, 206, 206);
 }
 
-
+.prevs-remove{
+    background-color: transparent;
+    transition: backdrop-filter 0.6s , box-shadow 0.6s;
+}
 
 
 @media (min-width: 992px) { 

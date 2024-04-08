@@ -3,9 +3,10 @@ const navbar = document.querySelector('nav')
 const Teki = document.getElementById('tebakan');
 const Hasil = document.getElementById('jawab')
 const ButtonMasuk = document.getElementById('masuk')
+
 const container = document.querySelector('.first')
 
-
+console.log(Teki)
 
 //halaman utama masuk
 const Pertanyaan = [
@@ -74,6 +75,27 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzLAFq_Nc7cCfbZwXwooO
     })
       .catch(error => console.error('Error!', error.message))
   })
+
+
+let i = document.querySelectorAll('.project-nav')
+for (let index = 0; index < i.length; index++) {
+    console.log(i[index])
+    
+}
+
+// let next = document.getElementById('nexts')
+// let prev = document.getElementById('prevs')
+
+let elemen_slide = document.getElementsByClassName('prevs')
+
+// console.log(elemen_slide)
+elemen_slide.classList.add('prevs-remove')
+
+
+function slide(value){
+}
+
+
 
 
 
